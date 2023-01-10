@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Nikunj Rajesh Thakur
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Nikunj Thakur} \\ \vspace{1pt}
+    250 Richvale Drive South, Brampton, ON L6Z4W2 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 647-702-3253 ~ \href{mailto:nrthakurr@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{nrthakurr@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/nrthakur/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/nrthakur}}  ~
+    \href{https://github.com/nrthakur}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/nrthakur}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {York University}{Sep. 2021 -- April 2025}
+      {Bachelors of Engineering., Spec. Hons. - Software Engineering}{Toronto, ON}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Computer Organization
+                \item Advanced OOP
+                \item Embedded Systems
+                \item Software Development
+                \item Operating Systems
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Vin Engineering, inc.}{January 2022 -- April 2022}
+      {Software Engineer Intern}{Mississauga, ON}
+      \resumeItemListStart
+        \resumeItem{Employed Jira to solve over 70 bugs in the Vin Engineering platform and improve cross-browser compatibility}
+        \resumeItem{Collaborated with senior developers using Agile framework to facilitate the production of data mining software}
+        \resumeItem{Orchestrated company meetings for Vin Engineering’s codebase architecture and programmatic practices}
+        \resumeItem{Explored ways to visualize and send a daily report of test results to team members  using HTML, Javascript, and CSS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NKM, Inc}{July 2021 -- September 2021}
+      {Front End Developer Intern}{Brampton, ON}
+      \resumeItemListStart
+        \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+        \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+        \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+        \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{MessageMe - iOS App} $|$ \emph{Swift, Google Firebase Firestore, Xcode}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{Produced a messaging application containing full functionality of sending and receiving messages.}
+            \resumeItem{Implemented Firebase Firestore database to take advantage of a client first SDK and real-time updates allowing to receive and send messages with ease.}
+            \resumeItem{Utilized fundamental UI/UX fundamentals to create an aesthetically appealing design. }
+            \resumeItem{Executed prominent message application principals to include: profile picture and timestamps.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{TriviaToday - iOS App} $|$ \emph{Swift, Xcode}}{November 2022}
+          \resumeItemListStart
+            \resumeItem{Used Swift to build a flawless iOS app that displays Multiple Choice questions to test General Knowledge.}
+            \resumeItem{Implemented an API function to pull and generate random questions at every run.}
+            \resumeItem{Learned and executed fundamental principles of UI/UX to include animation, progress bar, and instant
+depiction of right or wrong answer.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{2048 - Web Game} $|$ \emph{HTML, CSS, JavaScript, VScode}}{October 2022}
+          \resumeItemListStart
+            \resumeItem{Recreated the 2048 game using experimental methodologies, and taking initiative to execute new concepts
+and algorithms.}
+            \resumeItem{Utilized fundamental object oriented programming concepts such as setters, getters and encapsulation}
+            \resumeItem{Implemented complex logic, CSS animations in JavaScript and classes to increase efficiency and develop a
+professional program.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL, PowerShell, PHP, Swift} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio, Xcode} \\
+     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress, Dart, Flutter} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Faculty of Engineering Science}{September 2022 -- Present}{Director of Finance}{York University}
+            \resumeItemListStart
+                \resumeItem{Collaborated with Vice-President Finance to ensure all financial matters of the Faculty of Engineering Science were being accurately maintained.}
+                \resumeItem{ Actively participated in executive board discussions alongside a team of 20 members and attended weekly meetings to oversee progress in essential parts of the faculty.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
